@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  showRecipes: Boolean = true;
+
+  onNavigate(feature: string) {
+    if (feature === 'recipe') {
+        this.showRecipes = true;
+    }
+    else {
+      this.showRecipes = false;
+    }
+  }
+
 }
